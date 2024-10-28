@@ -11,7 +11,8 @@ function App() {
   console.log("Tasks :-", tasks);
 
   useEffect(() => {
-    setTasks(JSON.parse(localStorage.getItem("tasks")));
+    const storedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    setTasks(storedTasks);
   }, []);
 
   return (

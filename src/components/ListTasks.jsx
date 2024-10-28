@@ -128,8 +128,6 @@ const SingleTask = ({ task, tasks, setTasks }) => {
   }));
 
   const handleRemove = (id) => {
-    console.log(id);
-
     const fTasks = tasks.filter((t) => t.id !== id);
     localStorage.setItem("tasks", JSON.stringify(fTasks));
     setTasks(fTasks);
@@ -153,13 +151,13 @@ const SingleTask = ({ task, tasks, setTasks }) => {
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
-          stroke-width="1.5"
+          strokeWidth="1.5" // Corrected to camelCase
           stroke="currentColor"
-          class="size-6"
+          className="size-6"
         >
           <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round" // Corrected to camelCase
+            strokeLinejoin="round" // Corrected to camelCase
             d="M15 12H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
           />
         </svg>
