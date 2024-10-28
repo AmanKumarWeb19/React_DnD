@@ -40,10 +40,10 @@ Check out the live version of the app here: [Vercel Link](https://todo-dnd-omega
 4. **uuid**: To generate unique IDs for tasks   
 
 ## Components Overview
-**App.jsx**
+## App.jsx
 => The main component that initializes tasks from local storage and manages state. It integrates all major components (CreateTask, ListTasks) and provides drag-and-drop backend support.
 
-**CreateTask.jsx**
+## CreateTask.jsx
 => A form component that enables users to create new tasks with unique IDs, validates task names, and displays notifications on successful creation or validation errors.
 
 ## ListTasks.jsx
